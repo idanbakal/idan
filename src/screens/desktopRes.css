@@ -1,0 +1,255 @@
+
+
+@media (min-width: 1700px) {
+    .header h1{
+        top: 3vh;
+        right: 29vw;
+    }
+    .header p{
+        right: 16vw;
+        font-size: var(--buttonFont);
+        line-height: 1.5em;
+    }
+    .header .imgContainer{
+        top:  55vh;
+    }
+    .header button{
+        right:  36vw;
+    }
+    .body h3{
+        right: 42vw;
+    }
+    .body h4{
+        right: 33vw;
+
+    }
+    .body p{
+        font-size: var(--buttonFont);
+        right: 19vw;
+        line-height: 1.5em;
+    }
+    .body .how{
+        right: 45vw;
+    }
+    .body .howp{
+        font-size: var(--buttonFont);
+        right: 19vw;
+        line-height: 1.5em;
+    }
+    .body .formb{
+        right: 30vw;
+        top: 370vh;
+        height: 830px;
+    width: 800px;
+    }
+    .body .formb h3{
+            right: 28%;
+            top: 5%;
+        font-size: var(--buttonFont);
+    }
+    .body .formb h4{
+        right: 19%;
+        top: 18%;
+   
+    
+    }
+    
+    .body .formb form{
+        right: 19%;
+        top: 30%;
+    
+    }
+    
+    .body .formb form .specific {
+        height: 350px;
+        width: 455px;
+        
+    }
+    
+    .body .formb form .specific input{
+        outline: none;
+        border-top: none;
+        border-right: none;
+        
+    }
+    .body .formb form .submit{
+        top: -2%;
+        width: 100%;
+        height: 100px;
+    }
+    .body .faq{
+        right: 49vw;
+        top: 475vh ;
+     }
+    
+     .faq-container {
+        width: 800px;
+        top: 492vh;
+        right: 30vw;
+     }
+     .faq-item{
+        font-size: larger;
+     }
+     footer{
+        top: 540vh;
+     }
+     footer .developed{
+        height: 200px;
+        top: 5vh;
+     }
+     .contact-icons{
+        position: relative;
+        top: 0vh;
+      }
+}
+
+/* Mobile styles */
+@media (max-width: 700px) {
+.header h1{
+    font-size: 2.3rem;
+    right: 0vw;
+    width: 10em;
+}
+.header p{
+    right: 8vw ;
+    top: 19vh !important;
+    font-size: 1.5rem !important;
+    width: 70vw !important;
+  
+}
+.header .imgContainer{
+    overflow-y: hidden;
+    height: 15rem;
+    right: 5vw;
+}
+.header .imgContainer .profile{
+    position: relative;
+    top: 8vh;
+    right: 0.2vw;
+    height: 8rem;
+    width: 12rem;
+}
+.header .imgContainer .logo{
+    top: 7vh;
+    height: 10rem;
+    width: 15rem;
+}
+.header button{
+    height: 5rem;
+    width: 15rem;
+    top: 80vh;
+    right: 15vw;
+}
+.header button span{
+ font-size: 1.5rem;   
+}
+.body h3{
+    top: 103vh;
+    font-size: 2.3rem;
+    right:-1vw;
+    width: 10em;
+}
+.body h4{
+    top: 110vh;
+    font-size: 1.5rem;
+    right: 0.8vw;
+    width: 15em;
+    text-align: center;
+}
+.body p{
+    right: 8vw ;
+    top: 120vh ;
+    font-size: 1.5rem ;
+    width: 70vw ;
+}
+
+.body .how{
+    top: 170vh;
+    font-size: 2.3rem;
+    right:-1vw;
+    width: 10em;
+}
+.body .howp{
+    right: 8vw ;
+    top: 180vh ;
+    font-size: 1.5rem ;
+    width: 70vw ;
+}
+
+.body .formb{
+    right: 5vw;
+    top: 240vh;
+    height: 730px;
+width: 330px;
+}
+.body .formb h3{
+    top: 1vh;
+    font-size: 1.5rem;
+    right:8vw;
+    width: 10em;
+}
+.body .formb h4{
+    right: 5vw;
+    top: 18%;
+    font-size: 1.2rem;
+
+
+}
+
+.body .formb form{
+    right: 1.5rem;
+    top: 30%;
+
+}
+
+.body .formb form .specific {
+    height: 350px;
+    width: 17.5rem;
+    
+}
+
+.body .formb form .specific input{
+    outline: none;
+    border-top: none;
+    border-right: none;
+    
+}
+.body .faq{
+    right: -28vw;
+    top: 335vh ;
+ }
+
+ .faq-container {
+    width: 330px;
+    top: 355vh;
+    right: 3.5vw;
+ }
+ .faq-item{
+    font-size: 1.2rem ;
+ }
+ footer{
+    top: 420vh;
+    height: 10vh;
+ }
+ footer .developed{
+    height: 0.2em;
+    top: 17vh;
+    font-size: 0.6em;
+    text-align: center;
+ }
+ .contact-icons{
+    position: relative;
+    top: 8vh;
+    right: 6vw;
+  }
+  .contact-icons i{
+    height: 1em;
+    width: 1em;
+  }
+  footer .information i{
+    height: 6vh;
+    left: 5vw;
+  }
+
+  }
+  
