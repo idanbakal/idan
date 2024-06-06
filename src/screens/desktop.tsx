@@ -109,10 +109,9 @@ useEffect(()=>{
  </section>
  <footer>
  <div className="contact-icons">
-          <a href=""><i className="bx bxl-facebook-circle"></i></a>
-          <a href=""><i className="bx bxl-tiktok"></i></a>
-          <a href=""><i className="bx bxl-instagram"></i></a>
-          <a href=""><i className="bx bxl-linkedin"></i></a>
+          <a href="https://www.facebook.com/profile.php?id=100000605493499" target="_blank"><i className="bx bxl-facebook-circle"></i></a>
+          <a href="https://www.instagram.com/idanbakal/" target="_blank"><i className="bx bxl-instagram"></i></a>
+          <a href="https://www.linkedin.com/in/idan-amnon-bakal-944239235/" target="_blank"><i className="bx bxl-linkedin"></i></a>
         </div>
         <p ><a href="" className="developed">Developed By Idan Amnon Bakal © 2023</a> </p>
 <div className="information">
