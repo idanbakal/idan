@@ -51,10 +51,10 @@ useEffect(()=>{
             <img src={Logo} className="logo"alt="עידן בקל דפי נחיתה בקוד" />
             <img src={Profile} className="profile" alt="עידן בקל דפי נחיתה בקוד" />
             </div>
-            <button data-aos="zoom-in">
+            <a href="#formb"><button data-aos="zoom-in">
                 <span>לבנייה של דף נחיתה 
                     -<br></br> יצירת אומנות</span>
-            </button>
+            </button></a>
         </section>
         <section className="body">
             <h3 data-aos="fade-up">היי אני עידן </h3>
@@ -79,7 +79,7 @@ useEffect(()=>{
 מייד אחר כך תעלה לשיחה שלנו המעצבת <span>כדי שתוכל להוסיף את כל מה שחשוב לך בעיצוב האתר.</span><br />
 וזהו...כל השאר עלינו!
    </p>
-<div className="formb" data-aos="fade-up">
+<div className="formb" id="formb"data-aos="fade-up">
     <h3>שניצור יצירת אומנות?</h3>
     <h4>תשאירו פרטים ואני אחזור אליכם ב-24 שעות הקרובות.</h4>
     <form >
@@ -88,7 +88,7 @@ useEffect(()=>{
     <input type="number" required  placeholder="מספר טלפון:" />
     <input type="email" required placeholder="דואר אלקטרוני:"/>
     </div>
-    <button className="submit"><span>ליצירת האומנות שלך</span></button>
+    <button className="submit" ><span>ליצירת האומנות שלך</span></button>
     </form>
 </div>     
 <h3 className="faq" data-aos="fade-up">faq</h3>
@@ -118,11 +118,14 @@ useEffect(()=>{
 <div className="information">
 <span>idan19982@gmail.com<i className='bx bx-send' ></i></span>
 <span>052-6642040<i className='bx bx-phone'></i></span>
+
 </div>
 
- 
+<p ><a href="" className="developedres">Developed By Idan Amnon Bakal © 2023</a> </p>
+
 
  </footer>
+
         </>
     )
 }

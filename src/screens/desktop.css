@@ -12,18 +12,23 @@
 }
 @import "~boxicons/css/boxicons.min.css";
 
+#NagishLiTrigger {
+right: 93vw !important ;
+top: 10vh;}
+html{
+  scroll-behavior: smooth;
+}
 
 body{
     background-color:var(--deepBlue);
+    overflow-x: hidden;
 
 }
 *{
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
     direction: rtl;
-    overflow-x: hidden;
 }
-
 
 
 h1{
@@ -54,6 +59,7 @@ font-size: var(--mediumFont);
 font-style: normal;
 font-weight: 400;
 line-height: normal;
+z-index: 1;
 }
 
 .imgContainer{
@@ -89,7 +95,8 @@ border: none;
 cursor: pointer;
 }
 
-.header button span {
+.header button span  {
+  text-decoration: none;
     color: var(--tchelet);
     background-color: transparent;
 text-align: center;
@@ -219,7 +226,7 @@ overflow: visible; /* Allow overflow to show hover effects */
 
 .body .formb form .specific input{
     outline: none;
-    width: 150%;
+    width: 100%;
     background-color: transparent;
     color: #00EEFF;
     border-bottom: 1px solid var(--tchelet);
@@ -362,4 +369,7 @@ line-height: normal;
     top: 3vh;
     color: var(--white);
     text-decoration: none;
+  }
+  .developedres{
+    display: none;
   }
