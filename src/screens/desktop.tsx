@@ -21,34 +21,36 @@ const faqItems: FAQItem[] = [
 ];
 
 export default function Desktop() {
-  const [name, setName] = useState('');  
-  const [number, setNumber] = useState('');
-  const [mail, setMail] = useState('');
+    const [name, setName] = useState('');  
+    const [number, setNumber] = useState('');
+    const [mail, setMail] = useState('');
+    const [submitted, setSubmitted] = useState(false); // State to track form submission
 
-  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
-      e.preventDefault();
-      
-      const serviceId = 'service_xof22ib';
-      const templateId = 'template_7bhr516';
-      const publicKey = '7SOFxOh_b0TGBPTMH';
+    const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+        e.preventDefault();
+        
+        const serviceId = 'service_xof22ib';
+        const templateId = 'template_7bhr516';
+        const publicKey = '7SOFxOh_b0TGBPTMH';
 
-      const templateParams = {
-          from_name: name,
-          from_mail: mail,
-          from_number: number,
-          to_name: 'עידן!'
-      };
+        const templateParams = {
+            from_name: name,
+            from_mail: mail,
+            from_number: number,
+            to_name: 'עידן!'
+        };
 
-      emailjs.send(serviceId, templateId, templateParams, publicKey)
-      .then((response) => {
-          console.log('הפרטים נשלחו בהצלחה', response);
-          setName('');
-          setMail('');
-          setNumber('');
-      })
-      .catch((error) => {
-          console.error('אנא תמלאו את הפרטים במלואם', error);
-      });
+        emailjs.send(serviceId, templateId, templateParams, publicKey)
+        .then((response) => {
+            console.log('הפרטים נשלחו בהצלחה', response);
+            setName('');
+            setMail('');
+            setNumber('');
+            setSubmitted(true); // Set submitted to true after successful form submission
+        })
+        .catch((error) => {
+            console.error('אנא תמלאו את הפרטים במלואם', error);
+        });
   };
 
 
@@ -106,17 +108,27 @@ export default function Desktop() {
                     וזהו...כל השאר עלינו!
                 </p>
                 <div className="formb" id="formb" data-aos="fade-up">
-                    <h3>שניצור יצירת אומנות?</h3>
-                    <h4>תשאירו פרטים ואני אחזור אליכם ב-24 שעות הקרובות.</h4>
-                    <form onSubmit={handleSubmit}>
-                        <div className="specific">
-                            <input type="text" required placeholder="שם מלא:" value={name} onChange={(e) => setName(e.target.value)} />
-                            <input type="number" required placeholder="מספר טלפון:" value={number} onChange={(e) => setNumber(e.target.value)} />
-                            <input type="email" required placeholder="דואר אלקטרוני:" value={mail} onChange={(e) => setMail(e.target.value)} />
-                        </div>
-                        <button className="submit" type="submit"><span>ליצירת האומנות שלך</span></button>
-                    </form>
+            {submitted && (
+                <dialog open>
+                    <h3>תודה רבה!</h3>
+                    <p>הפרטים נשלחו בהצלחה.
+                        <br></br>
+                        אחזור אליכם בזמן הקרוב!
+                    </p>
+                    <button onClick={() => setSubmitted(false)}>סגור</button>
+                </dialog>
+            )}
+            <h3>שניצור יצירת אומנות?</h3>
+            <h4>תשאירו פרטים ואני אחזור אליכם ב-24 שעות הקרובות.</h4>
+            <form onSubmit={handleSubmit}>
+                <div className="specific">
+                    <input type="text" required placeholder="שם מלא:" value={name} onChange={(e) => setName(e.target.value)} />
+                    <input type="number" required placeholder="מספר טלפון:" value={number} onChange={(e) => setNumber(e.target.value)} />
+                    <input type="email" required placeholder="דואר אלקטרוני:" value={mail} onChange={(e) => setMail(e.target.value)} />
                 </div>
+                <button className="submit" type="submit"><span>ליצירת האומנות שלך</span></button>
+            </form>
+        </div>
                 <h3 className="faq" data-aos="fade-up">faq</h3>
                 <div className="faq-container" data-aos="fade-up-right">
                     {faqItems.map((item, index) => (

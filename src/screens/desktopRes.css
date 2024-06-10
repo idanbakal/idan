@@ -42,6 +42,19 @@
         height: 830px;
     width: 800px;
     }
+    .body .formb dialog{
+        height: 830px;
+    width: 800px;
+    }
+    .body .formb dialog h3{
+        right: 31%;
+        font-size: var(--largeFont);
+
+    }
+    .body .formb dialog p{
+        right: 22%;
+        font-size: var(--buttonFont);
+    }
     .body .formb h3{
             right: 28%;
             top: 5%;
@@ -195,7 +208,23 @@
     right: 23vw;
     top: 250vh;
     height: 730px;
-width: 330px;
+width:
+ 330px;
+}
+.body .formb dialog{
+    height: 730px;
+    width: 330px;
+}
+.body .formb dialog h3{
+    top: 9vh;
+    font-size: 3rem;
+    right:-19vw;
+    width: 10em;
+
+}
+.body .formb dialog p{
+    right: 1.5rem;
+    top: 30%;
 }
 .body .formb h3{
     top: 1vh;

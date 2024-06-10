@@ -184,12 +184,41 @@ border: 1px solid var(--tchelet);
    height: 630px;
     width: 600px;
  }
+ .body .formb dialog{
+  z-index: 1;
+  background-color: var(--deepBlue);
+  position: absolute;
+  right: 0vw;
+  top: 0vh ;
+border: 1px solid var(--tchelet); 
+ height: 630px;
+  width: 600px;
+ }
+ .body .formb dialog button{
+  position: absolute;
+  top: 0;
+ }
+ .body .formb dialog h3{
+  position: absolute;
+        right: 32%;
+        top: 20%;
+    color: var(--tchelet);
+    font-size: var(--buttonFont);
+ }
  .body .formb h3{
     position: absolute;
         right: 22%;
         top: 0%;
     color: var(--tchelet);
     font-size: var(--buttonFont);
+}
+.body .formb dialog p{
+position: absolute;
+top: 40%;
+right: 16%;
+line-height: 100px;
+font-size: var(--buttonFont);
+
 }
 .body .formb h4{
     position: absolute;
