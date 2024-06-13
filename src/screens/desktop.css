@@ -46,7 +46,7 @@ line-height: normal;
 }
 .header p{
     position: absolute;
-    left: 3%;
+    left: -2%;
     top: 23%;
     width: 1212px;
 height: 207px;
@@ -139,7 +139,7 @@ font-weight: 300;
 line-height: normal;
 position: absolute;
 top: 180vh;
-right: 28vw;
+right: 25vw;
 }
 .body p{
     color: var(--white);
