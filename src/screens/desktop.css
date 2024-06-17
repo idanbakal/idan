@@ -34,7 +34,7 @@ body{
 h1{
 position: absolute;
 top: 0.5vh; 
-right: 19vw;
+right: 21vw;
     color: var(--tchelet);
 text-align: center;
 font-family: "Open Sans";
@@ -46,7 +46,7 @@ line-height: normal;
 }
 .header p{
     position: absolute;
-    left: -2%;
+    right: 4.5vw;
     top: 23%;
     width: 1212px;
 height: 207px;
@@ -54,7 +54,7 @@ overflow: visible;
 flex-shrink: 0;
     color: var(--white);
 text-align: center;
-font-family: "Open Sans Hebrew Condensed";
+font-family: "Open Sans-CondensedLight", Helvetica;
 font-size: var(--mediumFont);
 font-style: normal;
 font-weight: 400;
@@ -100,7 +100,7 @@ cursor: pointer;
     color: var(--tchelet);
     background-color: transparent;
 text-align: center;
-font-family: "Open Sans Hebrew Condensed";
+font-family: "Open Sans-CondensedLight", Helvetica;
 font-size: var(--buttonFont);
 font-style: normal;
 font-weight: 400;
@@ -281,8 +281,8 @@ cursor: pointer;
 .body .formb form .submit span{
     color: var(--tchelet);
     text-align: center;
-font-family: "Open Sans Hebrew Condensed";
-font-size: var(--mediumFont);
+    font-family: "Open Sans-CondensedLight", Helvetica;
+    font-size: var(--mediumFont);
 font-style: normal;
 font-weight: 400;
 line-height: normal;
@@ -299,17 +299,17 @@ line-height: normal;
     font-size: var(--largeFont);
     font-weight: 300;
     position: absolute;
-    right: 45vw;
-    top: 470vh ;
+    right: 40vw;
+    top: 485vh ;
     letter-spacing: 0;
  }
 
  .faq-container {
     width: 600px;
-    font-family: Arial, sans-serif;
+    font-family: "Open Sans-CondensedLight", Helvetica;
     color: #00EEFF;
     position: absolute;
-    top: 492vh;
+    top: 512vh;
     right: 25vw;
 
   }
@@ -342,7 +342,7 @@ line-height: normal;
 
   footer {
     position: absolute;
-    top: 565vh;
+    top: 580vh;
     height: 10vh;
     width: 100vw;
     display: flex;
@@ -379,6 +379,7 @@ line-height: normal;
   }
   .information{
     bottom: 10vh;
+    left: 0vw;
     display: flex;
     justify-content: space-around;
     flex-direction: column;

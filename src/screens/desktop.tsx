@@ -68,6 +68,7 @@ export default function Desktop() {
 
     return (
         <>
+         <div className="content-wrapper">
             <section className="header">
                 <h1 data-aos="fade-up">דפי נחיתה שהם יצירת אומנות </h1>
                 <p data-aos="fade-down">
@@ -101,7 +102,7 @@ export default function Desktop() {
                 <p className="howp" data-aos="fade-up-left">
                     יחד איתי עובדים מעצבת גרפית וקופירייטר צמודים עד לסוף התהליך! <br></br>
                     (כלומר כמה זמן שייקח עד שתהיה מרוצה) <br></br>
-                    (אין אותיות קטנות  ) <br></br>
+                    (אין אותיות קטנות) <br></br>
                     נקבע פגישה שבה נעבור על החזון והערכים שלך <span>כדי שנוכל להבין ביחד מה התוצאה שאתה מצפה לקבל.</span> <br></br>
                     מייד אחר כך יצטרף אלינו לפגישה הקופירייטר שלנו <span>כדי שנוכל לאפיין ולהיסגר יחד מה ההצעה שלך ומי קהל היעד.</span><br />
                     מייד אחר כך תעלה לשיחה שלנו המעצבת <span>כדי שתוכל להוסיף את כל מה שחשוב לך בעיצוב האתר.</span><br />
@@ -129,7 +130,7 @@ export default function Desktop() {
                 <button className="submit" type="submit"><span>ליצירת האומנות שלך</span></button>
             </form>
         </div>
-                <h3 className="faq" data-aos="fade-up">faq</h3>
+                <h3 className="faq" data-aos="fade-up">FAQ</h3>
                 <div className="faq-container" data-aos="fade-up-right">
                     {faqItems.map((item, index) => (
                         <div key={index} className="faq-item">
@@ -151,18 +152,18 @@ export default function Desktop() {
           <a href="https://www.instagram.com/idanbakal/" target="_blank"><i className="bx bxl-instagram"></i></a>
           <a href="https://www.linkedin.com/in/idan-amnon-bakal-944239235/" target="_blank"><i className="bx bxl-linkedin"></i></a>
         </div>
-        <p ><a href="" className="developed">Developed By Idan Amnon Bakal © 2023</a> </p>
+        <p ><a href="" className="developed">Developed By Idan Amnon Bakal © 2024</a> </p>
 <div className="information">
 <span>idan19982@gmail.com<i className='bx bx-send' ></i></span>
 <span>052-6642040<i className='bx bx-phone'></i></span>
 
 </div>
 
-<p ><a href="" className="developedres">Developed By Idan Amnon Bakal © 2023</a> </p>
+<p ><a href="" className="developedres">Developed By Idan Amnon Bakal © 2024</a> </p>
 
 
  </footer>
-
+ </div>
         </>
     )
 }

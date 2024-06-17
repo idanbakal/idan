@@ -6,8 +6,10 @@
         right: 29vw;
     }
     .header p{
-        right: 16vw;
+        right: 16.5vw;
         font-size: var(--buttonFont);
+        width: 1312px;
+
         line-height: 1.5em;
     }
     .header .imgContainer{
@@ -91,7 +93,7 @@
         height: 100px;
     }
     .body .faq{
-        right: 49vw;
+        right: 45vw;
         top: 475vh ;
      }
     
@@ -126,6 +128,13 @@
 
 /* Mobile styles */
 @media (max-width: 700px) {
+    .content-wrapper{
+        position: relative;
+       min-width: 100%;
+       overflow-x: hidden;
+       height: 440vh;
+    }
+    
     *{
         overflow-x: hidden;
     }
@@ -135,78 +144,80 @@
         top: 10vh;}
 .header h1{
     font-size: 2.3rem;
-    right: 17vw;
+    right: 5vw;
     width: 10em;
 }
 .header p{
-    right: 24vw ;
-    top: 19vh !important;
-    font-size: 1.5rem !important;
+    right: 15vw ;
+    top: 17vh !important;
+    font-size: 1.7rem !important;
     width: 70vw !important;
   
 }
 .header .imgContainer{
     overflow-y: hidden;
-    height: 15rem;
-    right: 19vw;
+    top: 48vh;
+    right: 13vw;
 }
 .header .imgContainer .profile{
     position: relative;
-    top: 8vh;
+    top: 11vh;
     right: 0.2vw;
     height: 8rem;
-    width: 12rem;
+    width: 15rem;
 }
 .header .imgContainer .logo{
-    top: 7vh;
-    height: 10rem;
-    width: 15rem;
+    top: 7vh !important;
+    height: 15rem;
+    width: 29rem;
 }
 .header button{
     height: 5rem;
     width: 15rem;
-    top: 80vh;
-    right: 31vw;
+    top: 84vh;
+    right: 21vw;
 }
 .header button span{
- font-size: 1.5rem;   
+ font-size: 1.3rem;   
 }
 .body h3{
-    top: 103vh;
+    
+    top: 107vh;
     font-size: 2.3rem;
-    right:13vw;
+    right:6vw;
     width: 10em;
 }
 .body h4{
-    top: 110vh;
+    top: 114vh;
     font-size: 1.5rem;
-    right: 16vw;
+    right: 7vw;
     width: 15em;
     text-align: center;
 }
 .body p{
-    right: 24vw ;
-    top: 120vh ;
-    font-size: 1.5rem ;
+    right: 14vw ;
+    top: 124vh ;
+    font-size: 1.66rem ;
     width: 70vw ;
 }
 
 .body .how{
-    top: 170vh;
+    top: 180vh;
     font-size: 2.3rem;
-    right:14vw;
+    right:4vw;
     width: 10em;
 }
 .body .howp{
-    right: 24vw ;
-    top: 180vh ;
-    font-size: 1.5rem ;
+    
+    right: 14vw ;
+    top: 188vh ;
+    font-size: 1.66rem ;
     width: 70vw ;
 }
 
 .body .formb{
-    right: 23vw;
-    top: 250vh;
+    right: 10vw;
+    top: 259vh;
     height: 730px;
 width:
  330px;
@@ -258,22 +269,26 @@ width:
     border-right: none;
     
 }
+.body .formb form .submit{
+    top: -8%;
+}
 .body .faq{
-    right: -13vw;
-    top: 335vh ;
+    right:  -23vw;
+    top: 349vh ;
  }
 
  .faq-container {
     width: 330px;
-    top: 355vh;
-    right: 23vw;
+    top: 370vh;
+    right: 10vw;
  }
  .faq-item{
     font-size: 1.2rem ;
  }
  footer{
-    top: 410vh;
-    width: 100%;
+    padding: 0%;
+    top: 423vh;
+    width: 110%;
     height: 120px;
     flex-direction: row;
     overflow: visible;
@@ -283,10 +298,10 @@ width:
     color: var(--white);
     text-decoration: none;
     position: absolute;
-    top: 10vh;
+    top: 15vh;
     display: inline;
     height: 1.5em;
-    right: 35vw;
+    right: 31vw;
     font-size: 0.6em;
     text-align: center;
     overflow: visible;
@@ -298,7 +313,8 @@ width:
  .contact-icons{
     
     width: 6em;
-    right: 16vw;
+    right: 10vw;
+    top: 1vh;
     overflow: visible;
   }
   .contact-icons i{
@@ -313,8 +329,7 @@ width:
     
   }
   footer .information{
-    width: 10em;
-    right: 20vw;
+    right: 30vw;
     height: 5em;
   }
 
