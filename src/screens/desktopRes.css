@@ -132,7 +132,7 @@
         position: relative;
        min-width: 100%;
        overflow-x: hidden;
-       height: 440vh;
+       height: 420vh;
     }
     
     *{
@@ -161,9 +161,9 @@
 }
 .header .imgContainer .profile{
     position: relative;
-    top: 11vh;
+    top: 16vh;
     right: 0.2vw;
-    height: 8rem;
+    height: 5rem;
     width: 15rem;
 }
 .header .imgContainer .logo{
