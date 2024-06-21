@@ -1,13 +1,13 @@
 
 
-@media (min-width: 1700px) {
+@media (max-width: 1700px) {
     .header h1{
         top: 3vh;
-        right: 29vw;
+        right: 20vw;
     }
     .header p{
-        right: 14.5vw;
-        font-size: var(--buttonFont);
+        right:-3vw;
+        font-size: var(--mediumFont);
         width: 1312px;
 
         line-height: 1.5em;
@@ -15,32 +15,54 @@
     .header .imgContainer{
         top:  55vh;
     }
-    .header button{
-        right:  36vw;
+    .header .buttons{
+       right:-5vw ;
+       top: 20vh;
+    }
+    .header .profile1{
+        top: 158vh;
+        right: 30vw;
+    }
+    .body .me{
+        top: 265vh;
     }
     .body h3{
-        right: 42vw;
+        right: -3vw;
     }
     .body h4{
-        right: 33vw;
+        right: 25vw;
 
     }
-    .body p{
-        font-size: var(--buttonFont);
+    .body .me .pfirst{
         right: 19vw;
-        line-height: 1.5em;
+    }
+    .body .me .arrange{
+        top: 23vh;
+        right: -4vw;
+    }
+    .body .me .mebottom{
+        top: 15vh;
+        right: 40vw;
     }
     .body .how{
+        top: 385vh;
         right: 45vw;
     }
-    .body .howp{
-        font-size: var(--buttonFont);
-        right: 19vw;
-        line-height: 1.5em;
+    .Container{
+        top: 390vh;
+        right: 5vw;
     }
+    .services-list > div > h2{
+        font-family: "Open Sans-CondensedLight", Helvetica;
+        font-size: var(--buttonFont);
+    }
+    .services-list > div > p{
+        font-family: "Open Sans-CondensedLight", Helvetica;
+      font-size: 16px;
+      }
     .body .formb{
-        right: 30vw;
-        top: 370vh;
+        right: 18vw;
+        top: 530vh;
         height: 830px;
     width: 800px;
     }
@@ -93,20 +115,20 @@
         height: 100px;
     }
     .body .faq{
-        right: 45vw;
-        top: 475vh ;
+        right: 43vw;
+        top: 695vh ;
      }
     
      .faq-container {
         width: 800px;
-        top: 492vh;
-        right: 30vw;
+        top: 715vh;
+        right: 18vw;
      }
      .faq-item{
         font-size: larger;
      }
      footer{
-        top: 540vh;
+        top: 780vh;
      }
      footer .developed{
         height: 200px;
@@ -122,7 +144,7 @@
       }
      
       #NagishLiTrigger {
-        right: 95.5vw !important ;
+        right: 93.5vw !important ;
         top: 10vh;}
 }
 
@@ -132,92 +154,132 @@
         position: relative;
        min-width: 100%;
        overflow-x: hidden;
-       height: 420vh;
+       height: 720vh;
     }
     
-    *{
-        overflow-x: hidden;
-    }
+  
     #NagishLiTrigger {
         overflow-x: visible;
         right: 83vw !important ;
         top: 10vh;}
 .header h1{
     font-size: 2.3rem;
-    right: 5vw;
+    right: 6vw;
     width: 10em;
 }
 .header p{
     right: 15vw ;
-    top: 17vh !important;
-    font-size: 1.7rem !important;
+    top: 20vh !important;
+    font-size: 22px !important;
     width: 70vw !important;
   
 }
 .header .imgContainer{
-    overflow-y: hidden;
+    
     top: 48vh;
-    right: 13vw;
+    right: 20vw;
 }
 .header .imgContainer .profile{
     position: relative;
-    top: 16vh;
-    right: 0.2vw;
-    height: 5rem;
-    width: 15rem;
+    top: 12.5vh;
+    right: 6vw;
+    height: 8rem;
+    width: 17rem;
 }
 .header .imgContainer .logo{
     top: 7vh !important;
     height: 15rem;
     width: 29rem;
 }
-.header button{
-    height: 5rem;
-    width: 15rem;
-    top: 84vh;
-    right: 21vw;
+.header .profile1{
+    right: 3vw;
+    top: 120vh;
+    overflow: visible;
 }
-.header button span{
- font-size: 1.3rem;   
+.header .buttons{
+top: 90vh;
+height: 40vh;
+width: 100vw;
+display: flex;
+flex-direction: column ;
+overflow: visible;
 }
-.body h3{
+.header .buttons span{
+    font-size: 20px;
+}
+.header .buttons .to{
+    right: 30vw;
+    top: 2vh;
+   width: 200px;
+   height: 100px;
+}
+.header .buttons .toHow{
+    right: 30vw;
+    top: 2vh;
+    width: 200px;
+    height: 100px;
+
+
+}
+.body .me{
+    top: 180vh;
+    height: 450px;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+.body .me h3{
+    top: 4vh;
+    font-size: var(--buttonFont);
+}
+.body .me h4{
+    top: 6vh;
+    font-size: 26.9px;
+right: 5vw;
+}
+.body .me .pfirst{
+    right: 4vw;
+    top: 8vh;
+    font-size: 16px;
+
+}
+.body .me .arrange{
     
-    top: 107vh;
+    padding: 8px;
+    right: -6vw;
+    top: 12vh;
+}
+.body .me .arrange1{
+    font-size: 15px;
+}
+.body .me .mebottom{
+    font-size: 16px;
+    right: 32vw;
+    top: -22vh;
+}
+
+.body .how{
+    top: 255vh;
     font-size: 2.3rem;
     right:6vw;
     width: 10em;
 }
-.body h4{
-    top: 114vh;
-    font-size: 1.5rem;
-    right: 7vw;
-    width: 15em;
-    text-align: center;
-}
-.body p{
-    right: 14vw ;
-    top: 124vh ;
-    font-size: 1.66rem ;
-    width: 70vw ;
-}
-
-.body .how{
-    top: 180vh;
-    font-size: 2.3rem;
-    right:4vw;
-    width: 10em;
-}
-.body .howp{
+.Container{
+    right: -1vw;
+    top: 250vh;
     
-    right: 14vw ;
-    top: 188vh ;
-    font-size: 1.66rem ;
-    width: 70vw ;
+   
+    overflow: visible;
 }
-
+.services-list{
+    overflow: visible;
+}
+.services-list > div{
+    height: 500px;
+    overflow: visible;
+}
 .body .formb{
-    right: 10vw;
-    top: 259vh;
+    right: 12vw;
+    top: 520vh;
     height: 730px;
 width:
  330px;
@@ -273,13 +335,13 @@ width:
     top: -8%;
 }
 .body .faq{
-    right:  -23vw;
-    top: 349vh ;
+    right:  35vw;
+    top: 605vh ;
  }
 
  .faq-container {
     width: 330px;
-    top: 370vh;
+    top: 618vh;
     right: 10vw;
  }
  .faq-item{
@@ -287,7 +349,7 @@ width:
  }
  footer{
     padding: 0%;
-    top: 423vh;
+    top: 700vh;
     width: 110%;
     height: 120px;
     flex-direction: row;
@@ -336,3 +398,111 @@ width:
 
   }
   
+
+  @media (max-width: 400px){
+    .content-wrapper{
+        position: relative;
+       min-width: 100%;
+       overflow-x: hidden;
+       height: 690vh;
+    }
+    
+    .header h1{
+        right: 2vw;
+    }
+    .header p{
+        font-size: 20px !important;
+    }
+    .header .imgContainer{
+        right: 34vw;
+    }
+    .header .buttons{
+        top: 85vh;
+    }
+    .header .profile1{
+        right: -2vw;
+    }
+    .body .me h4{
+        right: 2vw;
+        font-size: 26px;
+    }
+    .body .me .pfirst{
+        font-size: 14.5px;
+    }
+    .body .how{
+        right: 5vw;
+    }
+    .Container{
+        right: -7vw;
+    }
+   .body .formb{
+    right: 8vw;
+    top: 495vh;
+   }
+   .body .faq{
+    right: 32vw;
+    top: 590vh;
+   }
+   .body .faq-container{
+    top: 610vh;
+   }
+   footer{
+    top: 672vh;
+   }
+  }
+
+  @media (max-width: 380px){
+    .content-wrapper{
+        position: relative;
+       min-width: 100%;
+       overflow-x: hidden;
+       height: 864vh;
+    }
+    .header p{
+        font-size: 19px !important;
+        top: 24vh !important;
+    }
+  .header  .imgContainer{
+        right: 38vw;
+    }
+    .header .buttons{
+        top: 90vh;
+    }
+    .header .profile1{
+        right: -4vw;
+        top: 130vh;
+    }
+    .body .me{
+        top: 219vh;
+    }
+    .body .me h4{
+        right:0vw;
+    }
+    .body .me .pfirst{
+        right: 2vw;
+    }
+    
+    .body .me .mebottom{
+        top: -12vh;
+    }
+    .body .how{
+        top: 296vh;
+    }
+    .body .Container{
+        top: 300vh;
+    }
+    .body .formb{
+        right: 6vw;
+        top: 620vh;
+    }
+    .body .faq{
+        top: 740vh;
+    }
+    .body .faq-container{
+        right: 5vw;
+        top: 765vh;
+    }
+    footer{
+        top: 845vh;
+    }
+  }

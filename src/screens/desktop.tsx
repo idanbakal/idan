@@ -3,6 +3,7 @@ import './desktop.css';
 import './desktopRes.css';
 import Logo from "../assets/logo.png";
 import Profile from "../assets/profile.png";
+import Profile1 from "../assets/profile1.png";
 import Aos from "aos";
 import 'aos/dist/aos.css';
 import emailjs from '@emailjs/browser';
@@ -13,11 +14,11 @@ interface FAQItem {
 }
 
 const faqItems: FAQItem[] = [
-    { question: 'מה זה דף נחיתה?', answer: 'דף נחיתה הוא עמוד אינטרנט שבו המבקרים נוחתים בו. המטרה היא לגרום למבקרים לעשות פעולה מסוימת כמו להשאיר פרטים או לקנות מוצר. זה כלי חשוב מאוד להגדלת מכירות ולהביא לקוחות חדשים.' },
-    { question: 'למה חשוב להשקיע בעיצוב דף נחיתה?', answer: 'עיצוב יפה ומקצועי מגדיל את הסיכוי שהמבקרים יעשו את הפעולה שלשמה בנינו את הדף נחיתה. דף נחיתה מעוצב טוב עושה רושם טוב ומדגיש את המסר שלך ומניע לפעולה בקרב הלקוחות. בדיוק בגלל זה יש לנו מעצבת גרפית מדהימה שמוכנה כדי ליצירת האומנות שלך תהיה לצידך.' },
-    { question: 'למי זה מתאים?', answer: 'עסקים שלא מרוצים מהתוצאות שדף הנחיתה שלהם מספק. כל עסק שבנה דף ולא מביא תוצאות, זקוק לטיפול והתחזות מקצועית.' },
-    { question: 'מהם המרכיבים החשובים ביותר בדף נחיתה?', answer: 'דף נחיתה איכותי הוא מכתב מכירה ברוח החדשה שמסביר מה בדיוק העסק שלך עושה ואיך העסק שלך יכול לעזור. צריך גם מבנה נכון כדי שהמבקרים באתר יבינו כמה שיותר מהר את העסק שלך ומה אתה יכול להציע להם.' },
-    { question: 'כמה זמן ייקח כל התהליך?', answer: 'אני רוצה שתקבל את יצירת האומנות שלך כמה שיותר מהר כדי שתוכל להרוויח כמה שיותר. לרוב מדובר ב-14 יום עבודה.' }
+    { question: ' מה זה דף נחיתה?', answer: 'דף נחיתה הוא עמוד אינטרנט שבו המבקרים נוחתים בו. המטרה היא לגרום למבקרים לעשות פעולה מסוימת כמו להשאיר פרטים או לקנות מוצר. זה כלי חשוב מאוד להגדלת מכירות ולהביא לקוחות חדשים.' },
+    { question: ' למה חשוב להשקיע בעיצוב דף נחיתה?', answer: 'עיצוב יפה ומקצועי מגדיל את הסיכוי שהמבקרים יעשו את הפעולה שלשמה בנינו את הדף נחיתה. דף נחיתה מעוצב טוב עושה רושם טוב ומדגיש את המסר שלך ומניע לפעולה בקרב הלקוחות. בדיוק בגלל זה יש לנו מעצבת גרפית מדהימה שמוכנה כדי ליצירת האומנות שלך תהיה לצידך.' },
+    { question: ' למי זה מתאים?', answer: 'עסקים שלא מרוצים מהתוצאות שדף הנחיתה שלהם מספק. כל עסק שבנה דף ולא מביא תוצאות, זקוק לטיפול והתחזות מקצועית.' },
+    { question: ' מהם המרכיבים החשובים ביותר בדף נחיתה?', answer: 'דף נחיתה איכותי הוא מכתב מכירה ברוח החדשה שמסביר מה בדיוק העסק שלך עושה ואיך העסק שלך יכול לעזור. צריך גם מבנה נכון כדי שהמבקרים באתר יבינו כמה שיותר מהר את העסק שלך ומה אתה יכול להציע להם.' },
+    { question: ' כמה זמן ייקח כל התהליך?', answer: 'אני רוצה שתקבל את יצירת האומנות שלך כמה שיותר מהר כדי שתוכל להרוויח כמה שיותר. לרוב מדובר ב-14 יום עבודה.' }
 ];
 
 export default function Desktop() {
@@ -80,35 +81,81 @@ export default function Desktop() {
                     <img src={Logo} className="logo" alt="עידן בקל דפי נחיתה בקוד" />
                     <img src={Profile} className="profile" alt="עידן בקל דפי נחיתה בקוד" />
                 </div>
-                <a href="#formb"><button data-aos="zoom-in">
+                <div className="buttons"  >
+                <a href="#formb"><button data-aos="fade-up"  className="to">
                     <span>לבנייה של דף נחיתה
                         -<br></br> יצירת אומנות</span>
                 </button></a>
+                <a href="#how"><button data-aos="fade-up"  className="toHow">
+                    <span>ספר לי איך?</span>
+                </button></a>
+                </div>
+                <img  className="profile1" src={Profile1} alt="עידן אמנון בקל" />
+
             </section>
             <section className="body">
+                <div className="me">
                 <h3 data-aos="fade-up">היי אני עידן </h3>
                 <h4 data-aos="fade-up">(מפתח האתרים האחרון שתדבר איתו)</h4>
-                <p data-aos="fade-up-right">
-                    אני מפתח דפי <span >נחיתה בקוד בצורה</span> כזו <span>שאי אפשר להתעלם</span> מהם!<br></br>
-                    <span>למה דווקא בקוד?</span>
-                    כי כשדף נחיתה נכתב בקוד אנחנו <span>לא מוגבלים</span> במה שאפשר<br></br>
-                    לעשות וככה אפשר לייצר את <span>דף הנחיתה מהחלומות שלך!</span> <br></br>
-                    המטרה שלי היא <span>שהעסק שלך יוכל להתחיל להרוויח גם אם אין לך עדיין הוכחות<br></br> חברתיות,</span>
-                    כי מה לעשות?
-                    <span>הלופ של ניסיון מול עבודה</span> הוא לופ שכל בעל עסק בתחילת הדרך חווה. <span>אז בוא נפתור את זה!</span>
-                </p>
+                
+                    <p className="pfirst" data-aos="fade-down">
+                    אני מפתח דפי <span >נחיתה בקוד בצורה</span> כזו <span>שאי אפשר להתעלם</span> מהם!</p><br></br>
+                    <div className="arrange" data-aos="fade-up-right">
+                    <div className="arrange1" >
+                    <span>למה דווקא בקוד?</span><br />
+                    כי כשדף נחיתה נכתב בקוד אנחנו <span>לא מוגבלים</span><br /> במה שאפשר
+                    לעשות וככה אפשר לייצר את<br /> <span>דף הנחיתה מהחלומות שלך!</span> </div>                   
+                    <div className="arrange1">
+                     המטרה שלי היא: <br /><span>שהעסק שלך יוכל להתחיל להרוויח גם אם אין<br /> לך עדיין הוכחות חברתיות,</span>
+                    כי מה לעשות?<br />
+                    <span>הלופ של ניסיון מול עבודה</span> הוא לופ שכל בעל<br /> עסק בתחילת הדרך חווה.                     </div>
+                    </div>
+                    <span className="mebottom" id="how" data-aos="fade-up">אז בוא נפתור את זה!</span>
+                </div>
 
-                <h3 className="how" data-aos="fade-up">איך?</h3>
-                <p className="howp" data-aos="fade-up-left">
-                    יחד איתי עובדים מעצבת גרפית וקופירייטר צמודים עד לסוף התהליך! <br></br>
-                    (כלומר כמה זמן שייקח עד שתהיה מרוצה) <br></br>
-                    (אין אותיות קטנות) <br></br>
-                    נקבע פגישה שבה נעבור על החזון והערכים שלך <span>כדי שנוכל להבין ביחד מה התוצאה שאתה מצפה לקבל.</span> <br></br>
-                    מייד אחר כך יצטרף אלינו לפגישה הקופירייטר שלנו <span>כדי שנוכל לאפיין ולהיסגר יחד מה ההצעה שלך ומי קהל היעד.</span><br />
-                    מייד אחר כך תעלה לשיחה שלנו המעצבת <span>כדי שתוכל להוסיף את כל מה שחשוב לך בעיצוב האתר.</span><br />
-                    וזהו...כל השאר עלינו!
-                </p>
-                <div className="formb" id="formb" data-aos="fade-up">
+                <h3 className="how"  data-aos="fade-up">איך?</h3>
+                <div className="services" id="services" >
+        <div className="Container" data-aos="fade-left">
+      
+          <div className="services-list">
+            <div >
+            <i className='bx bx-code bx-burst'></i>
+              <h2>סקריפט מנצח</h2>
+              <p>
+נקבע פגישה שבה נכיר אחד את השני, נבין איך אני יכול לעזור לך, נראה מה כבר ניסית שלא עבד ומה כן יעבוד בעתיד.  <br />
+<span>  
+  נשב יחד, נשמע את הסיפור שלך ונבין מה בדיוק אתה מחפש להשיג. 
+</span>
+              </p>
+            
+              <a href="#formb" className="read1">אני רוצה להתחיל!</a>
+            </div>
+            <div > 
+            <i className='bx bx-pencil bx-fade-left' ></i>     
+                    <h2>הכוח של המילים</h2>
+              <p>
+מיד לאחר מכן, יצטרף אלינו הקופירייטר שלנו. הוא מומחה בלמצוא את המילים הנכונות שיתארו בדיוק את ההצעה שלך ויפנו לקהל היעד שלך. 
+<br /><span>
+נתחיל בסיעור מוחות, נדון על הרעיונות שלך ונגבש יחד את המסר הכי חזק ומשכנע.
+</span>
+              </p>
+              <a href="#formb" className="read">אני רוצה להתחיל!</a>
+            </div>
+            <div >
+            <i className='bx bx-palette bx-spin'  ></i>
+              <h2>הקסם של העיצוב</h2>
+              <p>
+              ואז, המעצבת המדהימה שלנו תצטרף לשיחה. היא תדאג שכל הרעיונות והמסרים יתחברו בצורה הכי יפה ואסתטית בעיצוב האתר שלך. 
+            <br /><span>
+                היא תוודא שכל פרט קטן משדר בדיוק את מה שאתה רוצה ויוצר חוויית משתמש מרשימה ונעימה.    
+                </span>
+                        </p>
+              <a href="#formb" id="formb" className="read">אני רוצה להתחיל!</a>
+            </div>
+          </div>
+        </div>
+      </div>
+                <div className="formb"  data-aos="fade-up">
             {submitted && (
                 <dialog open>
                     <h3>תודה רבה!</h3>
@@ -132,19 +179,19 @@ export default function Desktop() {
         </div>
                 <h3 className="faq" data-aos="fade-up">FAQ</h3>
                 <div className="faq-container" data-aos="fade-up-right">
-                    {faqItems.map((item, index) => (
-                        <div key={index} className="faq-item">
-                            <div className="faq-question" onClick={() => toggleAnswer(index)}>
-                                {item.question}
-                            </div>
-                            {openIndex === index && (
-                                <div className="faq-answer">
-                                    {item.answer}
-                                </div>
-                            )}
+            {faqItems.map((item, index) => (
+                <div key={index} className="faq-item">
+                    <div className="faq-question" onClick={() => toggleAnswer(index)}>
+                        {openIndex === index ? '-' : '+'} {item.question}
+                    </div>
+                    {openIndex === index && (
+                        <div className="faq-answer">
+                            {item.answer}
                         </div>
-                    ))}
+                    )}
                 </div>
+            ))}
+        </div>
             </section>
             <footer>
  <div className="contact-icons">
