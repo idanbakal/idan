@@ -17,12 +17,20 @@ right: 95.6vw !important ;
 top: 10vh;}
 html{
   scroll-behavior: smooth;
-}
+  min-height: 100%;
+  height: -webkit-fill-available;
 
+}
+.content-wrapper{
+  height: -webkit-fill-available;
+  min-height: 100%;
+
+}
 body{
     background-color:var(--deepBlue);
     overflow-x: hidden;
-
+    height: -webkit-fill-available;
+min-height: 100dvh;
 }
 *{
   margin: 0;

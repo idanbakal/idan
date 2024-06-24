@@ -152,17 +152,18 @@
 @media (max-width: 700px) {
     .content-wrapper{
         position: relative;
-       min-width: 100%;
+       width: 100vw;
        overflow-x: hidden;
-       height: 720vh;
-    }
-    
+       height: 670dvh;
   
+    }
+   
     #NagishLiTrigger {
         overflow-x: visible;
         right: 83vw !important ;
         top: 10vh;}
 .header h1{
+    
     font-size: 2.3rem;
     right: 6vw;
     width: 10em;
@@ -175,9 +176,9 @@
   
 }
 .header .imgContainer{
-    
+    order: 1;
     top: 48vh;
-    right: 20vw;
+    right: 16vw;
 }
 .header .imgContainer .profile{
     position: relative;
@@ -258,17 +259,16 @@ right: 5vw;
 }
 
 .body .how{
-    top: 255vh;
+    top: 240vh;
     font-size: 2.3rem;
     right:6vw;
     width: 10em;
 }
 .Container{
     right: -1vw;
-    top: 250vh;
+    top: 240vh;
     
    
-    overflow: visible;
 }
 .services-list{
     overflow: visible;
@@ -279,7 +279,7 @@ right: 5vw;
 }
 .body .formb{
     right: 12vw;
-    top: 520vh;
+    top: 470vh;
     height: 730px;
 width:
  330px;
@@ -336,12 +336,12 @@ width:
 }
 .body .faq{
     right:  35vw;
-    top: 605vh ;
+    top: 570vh ;
  }
 
  .faq-container {
     width: 330px;
-    top: 618vh;
+    top: 590vh;
     right: 10vw;
  }
  .faq-item{
@@ -349,7 +349,7 @@ width:
  }
  footer{
     padding: 0%;
-    top: 700vh;
+    top: 650vh;
     width: 110%;
     height: 120px;
     flex-direction: row;
@@ -401,12 +401,15 @@ width:
 
   @media (max-width: 400px){
     .content-wrapper{
-        position: relative;
+        position: absolute;
        min-width: 100%;
        overflow-x: hidden;
        height: 690vh;
+       z-index: 10;
+       height: -webkit-fill-available;
     }
-    
+
+   
     .header h1{
         right: 2vw;
     }

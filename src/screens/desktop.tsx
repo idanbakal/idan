@@ -8,6 +8,13 @@ import Aos from "aos";
 import 'aos/dist/aos.css';
 import emailjs from '@emailjs/browser';
 
+const setHeight = function() {
+    const currentHeight = window.innerHeight;
+    document.body.style.height = `${currentHeight}px`;
+  }
+  window.addEventListener("resize", setHeight);
+  setHeight()
+
 interface FAQItem {
     question: string;
     answer: string;
@@ -71,6 +78,7 @@ export default function Desktop() {
         <>
          <div className="content-wrapper">
             <section className="header">
+            <div className="first">
                 <h1 data-aos="fade-up">דפי נחיתה שהם יצירת אומנות </h1>
                 <p data-aos="fade-down">
                     הכלי החזק ביותר לייצר מכירות ולהביא לקוחות חדשים לעסק שלך. <br></br>
@@ -80,6 +88,7 @@ export default function Desktop() {
                 <div className="imgContainer" data-aos="fade-left">
                     <img src={Logo} className="logo" alt="עידן בקל דפי נחיתה בקוד" />
                     <img src={Profile} className="profile" alt="עידן בקל דפי נחיתה בקוד" />
+                </div>
                 </div>
                 <div className="buttons"  >
                 <a href="#formb"><button data-aos="fade-up"  className="to">
@@ -94,6 +103,7 @@ export default function Desktop() {
 
             </section>
             <section className="body">
+                <div className="second">
                 <div className="me">
                 <h3 data-aos="fade-up">היי אני עידן </h3>
                 <h4 data-aos="fade-up">(מפתח האתרים האחרון שתדבר איתו)</h4>
@@ -110,10 +120,11 @@ export default function Desktop() {
                     כי מה לעשות?<br />
                     <span>הלופ של ניסיון מול עבודה</span> הוא לופ שכל בעל<br /> עסק בתחילת הדרך חווה.                     </div>
                     </div>
-                    <span className="mebottom" id="how" data-aos="fade-up">אז בוא נפתור את זה!</span>
+                    <span className="mebottom"  data-aos="fade-up">אז בוא נפתור את זה!</span>
                 </div>
-
-                <h3 className="how"  data-aos="fade-up">איך?</h3>
+                </div>
+                <div className="third">
+                <h3 className="how" id="how"  data-aos="fade-up">איך?</h3>
                 <div className="services" id="services" >
         <div className="Container" data-aos="fade-left">
       
@@ -155,6 +166,7 @@ export default function Desktop() {
           </div>
         </div>
       </div>
+      </div>
                 <div className="formb"  data-aos="fade-up">
             {submitted && (
                 <dialog open>
@@ -177,6 +189,7 @@ export default function Desktop() {
                 <button className="submit" type="submit"><span>ליצירת האומנות שלך</span></button>
             </form>
         </div>
+        <div className="five">
                 <h3 className="faq" data-aos="fade-up">FAQ</h3>
                 <div className="faq-container" data-aos="fade-up-right">
             {faqItems.map((item, index) => (
@@ -191,6 +204,7 @@ export default function Desktop() {
                     )}
                 </div>
             ))}
+        </div>
         </div>
             </section>
             <footer>
